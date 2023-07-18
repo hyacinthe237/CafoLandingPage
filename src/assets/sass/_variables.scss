@@ -1,0 +1,19 @@
+// Body
+// $body-bg: #f5f8fa;
+$body-bg: #fff;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+$icon-font-path: "~bootstrap/assets/fonts/bootstrap/";
+$assets-path: "~@/assets";
+
+$primary: #b60c71;
+$primary-b6: #b60c7259;
+$secondary: red;
+$black: #000000;
+$green:green;
+$orange:orange;

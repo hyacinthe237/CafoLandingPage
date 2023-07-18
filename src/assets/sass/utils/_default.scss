@@ -1,0 +1,40 @@
+* {
+    font-family: 'TT Norms Pro', sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'TT Norms Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elevated { box-shadow: 2px 8px 20px rgba(0,0,0,0.2); }
+.nowrap { white-space: nowrap; }
+.pt-10 { padding-top: 10px; }
+.pt-20 { padding-top: 20px; }
+.pt-30 { padding-top: 30px; }
+.pt-40 { padding-top: 40px; }
+.pt-50 { padding-top: 50px; }
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+.mt-50 { margin-top: 50px; }
+.primary { color: $primary; }
+.secondary { color: $secondary; }
+.tj { text-align: justify; }
+.tl { text-align: left; }
+.tc { text-align: center; }
+.tr { text-align: right; }
+.fs-14 { font-size: 14px; }
+.fs-100 { font-size: 100px; }
