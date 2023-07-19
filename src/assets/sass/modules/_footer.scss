@@ -1,0 +1,81 @@
+.endpage {
+    width: 100%;
+    min-height: 50vh;
+    padding-top: 40px;
+
+    .box {
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            font-family: 'TT Norms Pro', Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: $black;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: self-start;
+            margin-bottom: 20px;
+        
+            li {
+                margin-bottom: 10px;
+                font-size: 16px;
+                font-family: 'TT Norms Pro', Arial, Helvetica, sans-serif;
+
+                a {
+                    color: black;
+        
+                    &:hover {
+                        color: #b60c71;
+                    }
+                }
+            }
+        }
+    }
+
+    .cafo {
+        align-self:center;
+     
+    }
+
+    .box-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        img {
+            height: 100px;
+            width: 100px;
+        
+        }
+    }
+    // .endfooter {
+    //     >ul{
+    //         display:flex;
+    //         flex-direction:row;
+    //         list-style-type:none ;
+    //         >li {
+    //             margin:0px 5px;
+    //             padding: 20px 90px;
+    //             margin-bottom: 40px;
+    //             >a {
+    //                 color: $black;
+    //                 font-size: auto;
+    //                 padding: 0px;
+    //                 font-weight: bold;
+    //             &:hover {
+    //                     color: $primary;
+    //                  }
+    //             }
+    //         }
+    //     }
+    // }
+        
+}
