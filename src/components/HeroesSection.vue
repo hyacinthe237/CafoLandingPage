@@ -1,19 +1,30 @@
 <template>
-    <div class="Hsection">
-        <div class="logoStore">
-            <a href="#"><img :src="googleplaylogo"></a>
+    <div class="hsection" :style="`background-image: url(${bgHero});`">
+        <div class="slogan">
+            <h1>Piloter vos equipes et partenaires en temps réel</h1>
+            <p>Fournir aux managers des indicateurs efficaces de développement du CA: couverture, croissance du porte-feuilles, distribution, suivi  CRM.</p>
+            <div class="button">
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-4">
+                        <button class="btn btn-primary-outline" href="#">Voir la démo</button>
+                    </li>
+                    <li class="nav-item ">
+                        <button class="btn btn-secondary-outline" href="#">Tester</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
 <script>
-     import Section  from '@/assets/Section.psd'
+     import bgHero  from '@/assets/bg-hero.png'
     import googleplaylogo  from '@/assets/googleplaylogo.png'
 
     export default {
        
         name: 'HeroesSectionComponent',
         data: () => ({
-            Section,
+            bgHero,
             googleplaylogo, 
         }),
 

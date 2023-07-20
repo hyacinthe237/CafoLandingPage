@@ -1,174 +1,72 @@
 <template>
-    <div class="container-fluid">
-        <div class="row">
+  <section class="HomeSection">
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <div><th>Tarification</th></div>
-                        <th>
-                        <div class="pricingTable-header">
-                            <h3 class="title">Standard</h3>
-                            <div class="price-value">$10</div>
+                    <th class="w40">
+                      <h3>Tarification</h3>
+                      <p>Unique pour toujours vous satisfaire.</p>
+                    </th>
+                    <th class="w20">
+                        <div class="pricingTable-header test" @click="selectOptionTest('test')">
+                            <h3 class="title">Test</h3>
+                            <div class="price-value nowrap">100 €</div>
+                            <p>Pas d'engagement</p>
+                        </div>
+                        
+                    </th>
+                    <th class="w20">
+                        <div class="pricingTable-header mensuel" @click="selectOptionMensuel('mensuel')">
+                            <h3 class="title">Mensuel</h3>
+                            <div class="price-value nowrap">1520 €</div>
+                            <p>Paiement trimestriel abonnement</p>
                         </div>
                     </th>
-                        <th>
-                        <div class="pricingTable-header">
-                            <h3 class="title">Business</h3>
-                            <div class="price-value">$20</div>
+                    <th class="w20">
+                        <div class="pricingTable-header annuel" @click="selectOptionAnnuel('annuel')">
+                            <h3 class="title">Annuel</h3>
+                            <div class="price-value nowrap">15300 €</div>
+                            <p>Paiement annuel abonement</p>
                         </div>
                     </th>
-                        <th>
-                        <div class="pricingTable-header">
-                            <h3 class="title">Business</h3>
-                            <div class="price-value">$20</div>
+                    <th class="w30">
+                        <div class="pricingTable-header expl" @click="selectOptionExpl('expl')">
+                            <h3 class="title">Licence d'exploitation</h3>
+                            <div class="price-value nowrap">35000 €</div>
+                            <p>Paiement unique</p>
                         </div>
                     </th>
-                        <th>
-                        <div class="pricingTable-header">
-                            <h3 class="title">Business</h3>
-                            <div class="price-value">$20</div>
-                        </div>
-                    </th>
-
                 </tr>
             </thead>
-
             <tbody>
                 <tr 
-                    v-for="(t, index) in tarifs"
-                    :key="index++"
+                  v-for="(t, index) in tarifs"
+                  :key="index++"
                 >
-                    <td>{{ t.name }}</td>
-                    <td><i :class="`feather icon-${t.icon1}`"></i></td>
-                    <td><i :class="`feather icon-${t.icon2}`"></i></td>
-                    <td><i :class="`feather icon-${t.icon3}`"></i></td>
-                    <td><i :class="`feather icon-${t.icon4}`"></i></td>
+                  <td class="w40">{{ t.name }}</td>
+                  <td :class="['w15', classOptionTest]"><i :class="`feather icon-${t.icon1}`"></i></td>
+                  <td :class="['w15', classOptionMensuel]"><i :class="`feather icon-${t.icon2}`"></i></td>
+                  <td :class="['w15', classOptionAnnuel]"><i :class="`feather icon-${t.icon3}`"></i></td>
+                  <td :class="['w15', classOptionExpl]"><i :class="`feather icon-${t.icon4}`"></i></td>
                 </tr>
             </tbody>
         </table>
-    </div>
-    </div>
-   
-        <!-- <div class="pricing-area">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 col-sm-6 col-xs-12">
-        <div class="single-price">
-          <div class="deal-top">
-            <h3>Test</h3>
-            <h4> 100<span class="sup">$</span></h4> 
-            <h3>Pas d'engagement</h3>
-          </div>
-          <div class="deal-bottom">
-            <ul class="deal-item">
-                <li>Base données clients</li>
-                 <li>Suivi des visites clients</li>
-                <li>Prospection clients</li>
-                <li>Stats/KPI de managers</li>
-                <li>Gestion des commandes</li>
-                <li>Jusqu’à 10 comptes</li>
-                <li>Sécurisation</li>
-                <li>Serveur dédiée</li>
-                <li>Sauvegarde</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5 col-sm-6 col-xs-12">
-        <div class="single-price">
-          <div class="deal-top1">
-            <h3>Mensuel</h3>
-            <h4> 1520<span class="sup">$</span></h4>
-            <h3>Paiement trimestriel abonnement</h3>
-          </div>
-          <div class="deal-bottom">
-            <ul class="deal-item">
-                <li>Base données clients</li>
-                <li>Suivi des visites clients</li>
-                <li>Réseau client partenaire</li>
-                <li>Prospection clients</li>
-                <li>Stats/KPI de managers</li>
-                <li>Gestion de commandes</li>
-                <li>Jusqu’à 100 managers
-Jusqu’à 300 commerciaux
-Sauvegardes régulières</li>
-                <li>Jusqu’à 100 managers
-Jusqu’à 300 commerciaux
-Sauvegardes régulières</li>
-                <li>Sécurisation</li>
-                <li>Serveurs dédiées</li>
-                <li>Jusqu’à 100 managers
-Jusqu’à 300 commerciaux
-Sauvegardes régulières</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    <div class="container">
-    <div class="row">
-      <div class="col-md-5 col-sm-6 col-xs-12 ">
-        <div class="single-price">
-          <div class="deal-top2">
-            <h3>Annuel</h3>
-            <h4> 15300<span class="sup">$</span></h4> 
-            <h3>Paiement annuel abonnement</h3>
-          </div>
-          <div class="deal-bottom">
-            <ul class="deal-item">
-                <li>Base données clients</li>
-                <li>Suivi des visites clients</li>
-                <li>Réseau client partenaire</li>
-                <li>Prospection clients</li>
-                <li>Stats/KPI de managers</li>
-                <li>Gestion de commandes</li>
-                <li>Jusqu’à 100 managers</li>
-                <li>Jusqu’à 300 commerciaux</li>
-                <li>Serveurs dédiées</li>
-                <li>Sauvegardes régulières</li>
-                <li>Formation + Assistance</li>
-                <li>Maintenance garantie</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5 col-sm-6 col-xs-12">
-        <div class="single-price">
-          <div class="deal-top3">
-            <h3>Licence d'exploitation</h3>
-            <h4> 35000<span class="sup">$</span></h4>
-            <h3>Paiement unique</h3>
-          </div>
-          <div class="deal-bottom">
-            <ul class="deal-item">
-                <li>Base données clients</li>
-                <li>Suivi des visites clients</li>
-                <li>Réseau client partenaire</li>
-                <li>Prospection clients</li>
-                <li>Stats/KPI de managers</li>
-                <li>Gestion de commandes</li>
-                <li>Accès illimité à tout</li>
-                <li>Serveur de base de données hébergé chez le client(confidentialité)</li>
-                <li>Formation + Assistance</li>
-                <li>Maintenance 3ans</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-</div>
-</div> -->
+  </section>
 </template>
 <script>
     export default {
         name: 'PricingTableComponent',
         data: () => ({
-            tarifs: []
+            tarifs: [],
+            classOptionTest: '',
+            classOptionMensuel: '',
+            classOptionAnnuel: '',
+            classOptionExpl: '',
         }),
 
         mounted () {
             this.initTarifs()
+            this.selectOptionMensuel('mensuel')
         },
 
         methods: {
@@ -177,7 +75,6 @@ Sauvegardes régulières</li>
                     { name: 'Base données clients', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check'},
                     { name: 'Suivi des visites clients', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check' },
                     { name: 'Prospection clients', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check' },
-                    { name: 'Réseau client partenaire', icon1: 'x', icon2: 'check', icon3: 'check', icon4: 'check' },
                     { name: 'Stats/KPI de managers', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check' },
                     { name: 'Gestion de commandes', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check' },
                     { name: 'Jusqu’à 10 compte', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check' },
@@ -185,6 +82,7 @@ Sauvegardes régulières</li>
                     { name: 'Serveur dédiée', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check' },
                     { name: 'Sauvegarde', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check' },
                     { name: 'Stats/KPI de managers', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check' },
+                    { name: 'Réseau client partenaire', icon1: 'x', icon2: 'check', icon3: 'check', icon4: 'check' },
                     { name: 'Jusqu’à 100 managers', icon1: 'x', icon2: 'check', icon3: 'check', icon4: 'check' },
                     { name: 'Jusqu’à 300 commerciaux', icon1: 'x', icon2: 'check', icon3: 'check', icon4: 'check' },
                     { name: 'Sauvegardes régulières', icon1: 'x', icon2: 'check', icon3: 'check', icon4: 'check' },
@@ -195,7 +93,32 @@ Sauvegardes régulières</li>
                     { name: 'Accès illimité à tout', icon1: 'x', icon2: 'x', icon3: 'x', icon4: 'check' },
                    
                 ];
-            }
+            },
+
+            selectOptionTest (option) {
+              this.classOptionTest = `selected-${option}`
+              this.classOptionMensuel = ''
+              this.classOptionAnnuel = ''
+              this.classOptionExpl = ''
+            },
+            selectOptionMensuel (option) {
+              this.classOptionMensuel = `selected-${option}`
+              this.classOptionTest = ''
+              this.classOptionAnnuel = ''
+              this.classOptionExpl = ''
+            },
+            selectOptionAnnuel (option) {
+              this.classOptionAnnuel = `selected-${option}`
+              this.classOptionTest = ''
+              this.classOptionMensuel = ''
+              this.classOptionExpl = ''
+            },
+            selectOptionExpl (option) {
+              this.classOptionExpl = `selected-${option}`
+              this.classOptionTest = ''
+              this.classOptionMensuel = ''
+              this.classOptionAnnuel = ''
+            },
         },
     }
 </script>
