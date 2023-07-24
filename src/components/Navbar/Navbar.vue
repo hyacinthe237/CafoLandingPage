@@ -1,7 +1,7 @@
 <template>
     <header>
-        <div class="banner">
-        </div>
+        <!-- <div class="banner">
+        </div> -->
         <nav class="navbar navbar-expand-lg navbar-light" id="navbar_top">
             <div class="container">
                 <a  href="#" 

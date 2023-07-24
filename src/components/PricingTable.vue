@@ -1,5 +1,5 @@
 <template>
-  <section class="HomeSection">
+  <section class="home-section">
         <table class="table table-striped">
             <thead>
                 <tr>

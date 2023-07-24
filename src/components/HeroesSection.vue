@@ -8,7 +8,7 @@
                     <li class="nav-item mr-4">
                         <button class="btn btn-primary-outline" href="#">Voir la démo</button>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <button class="btn btn-secondary-outline" href="#">Tester</button>
                     </li>
                 </ul>
@@ -17,11 +17,10 @@
     </div>
 </template>
 <script>
-     import bgHero  from '@/assets/bg-hero.png'
+    import bgHero  from '@/assets/bg-hero.png'
     import googleplaylogo  from '@/assets/googleplaylogo.png'
 
     export default {
-       
         name: 'HeroesSectionComponent',
         data: () => ({
             bgHero,

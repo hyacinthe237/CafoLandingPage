@@ -1,7 +1,25 @@
-.HomeSection {
+.home-section {
     width: 100%;
     min-height: 100vh;
-    padding: 40px;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    
+    &.bg-grey {
+        background-color: rgba(0,0,0,0.1);
+    }
+
+    ._title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 3em;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    }
 }

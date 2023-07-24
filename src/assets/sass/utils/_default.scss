@@ -38,3 +38,9 @@ body {
 .tr { text-align: right; }
 .fs-14 { font-size: 14px; }
 .fs-100 { font-size: 100px; }
+.text-center {
+    display: flex;
+    flex-direction: column;
+}
+.white { color: white; }
+.black { color: black; }

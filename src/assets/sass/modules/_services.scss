@@ -1,14 +1,37 @@
-.col-sm-4 {
+.Service {
     text-align: center;
+    .Description {
+        text-align: center;
+        font-weight: 450;
+    }
+    h2 {
+        text-transform: uppercase;
+    }
+}
+.service {
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 290px;
+    margin: 20px 0px;
+    i {
+        font-size: 50px;
+    }
+    h5 {
+        margin-top: 20px;
+    }
     p {
         text-align: center;
     }
-    i {
-        margin-right: 10px;
-    }
     .description {
         text-align: center;
-        font-weight: 450;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+    
+    button {
+        border-radius: 10px;
+        
     }
 
 }

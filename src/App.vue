@@ -5,6 +5,8 @@
     <div class="container">
       <HeroesSectionComponent></HeroesSectionComponent>
       <ServicesComponent></ServicesComponent>
+      <FeatureComponent></FeatureComponent>
+      <CarousselComponent></CarousselComponent>
       <PricingTableComponent></PricingTableComponent>
     </div>    
     <FooterComponent></FooterComponent>
@@ -17,6 +19,8 @@ import navbar from './components/Navbar/Navbar.vue'
 import PricingTableComponent from './components/PricingTable.vue'
 import HeroesSectionComponent from './components/HeroesSection.vue'
 import ServicesComponent from './components/Services.vue'
+import FeatureComponent from './components/Feature.vue'
+import CarousselComponent from './components/Caroussel.vue'
 export default {
   name: 'App',
   components: {
@@ -24,7 +28,9 @@ export default {
     FooterComponent,
     PricingTableComponent,
     HeroesSectionComponent,
-    ServicesComponent
+    ServicesComponent,
+    FeatureComponent,
+    CarousselComponent
   },
 
   methods: {

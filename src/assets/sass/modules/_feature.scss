@@ -1,0 +1,42 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+.card {
+  padding: 2.1em 1em;
+  background: linear-gradient(0deg, #397ef6 15px,transparent 10px);
+  background-repeat: no-repeat;
+  background-position: 0 0.62em;
+  border-radius: 0.5em;
+  text-align: center;
+  align-items: center;
+  .icon {
+    font-size:  2.5em;
+    height: 2em;
+    background-color: #397ef6;
+    display: grid;
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .icon ::before {
+    position: absolute;
+    height: 1.5em;
+    width: 1.5em;
+    border: 0.12em solid #397ef6;
+    border-radius: 100%;
+    background-color: #397ef6;
+  }
+  h3 {
+    font-size: 1.3em;
+    margin: 1em 0 1.4em 0;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #070024;  
+  }
+  p {
+
+  }
+}
