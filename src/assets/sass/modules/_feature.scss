@@ -1,0 +1,90 @@
+.main {
+  width: 100%;
+  min-height: 380px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feat {
+  background: white;
+
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 0 20px -15px black;
+  z-index: 1;
+  transition: .7s;
+  min-height: 240px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  .icon {
+    width: 105px;
+    min-height: 105px;
+    border: .5px solid $primary;
+    border-radius: 50%;
+    margin: -100px auto 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 50px;
+      color: $primary;
+     
+    }
+  }
+  h3 {
+   font-size: 1.25em;
+   font-weight: 500;
+  }
+  
+}
+.shadow1 {
+  height: 200px;
+  width: 80%;
+  background:  $primary;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  left: 10%;
+  z-index: -1;
+  box-shadow: 0 0 20px -15px black;
+  transition: transform .7s;
+}
+.shadow2 {
+  height: 200px;
+  width: 64%;
+  background:  $yellow;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  left: 18%;
+  z-index: -2;
+  box-shadow: 0 0 20px -15px black;
+  transition: transform .7s;
+}
+.main:hover .feat {
+  transform: translateY(-50px);
+}
+.main:hover .shadow1 {
+  transform: translateY(-25px);
+}
+.carousel {
+  h1 {
+   text-align: center;
+   margin: 20px 0;
+   font-family: 'TT Norms Pro', sans-serif;
+  }
+  
+ }
+ .slide 
+   img {
+   height: 400px;
+ }

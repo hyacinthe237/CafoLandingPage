@@ -6,7 +6,7 @@ import App from './App.vue'
 Vue.config.productionTip = false
 
 import 'bootstrap/dist/css/bootstrap.css'
-
+import 'bootstrap/js/dist/collapse.js'
 // global.$ = $
 
 new Vue({

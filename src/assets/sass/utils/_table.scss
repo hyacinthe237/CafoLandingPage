@@ -1,0 +1,260 @@
+
+
+table {
+    border-spacing: 1;
+}
+
+
+.table-striped {
+    > tbody {
+        > tr {
+            font-size: 15px;
+            padding: 15px;
+            line-height: 30px;
+
+            &:nth-of-type(odd) {
+                background-color: #f5f8fa;
+            }
+        }
+    }
+}
+
+.table {
+    margin: 0;
+
+    thead {
+      width: 100%;
+      max-height: 30px;
+      tr {
+        width: 100%;
+        height: 30px;
+        padding: 5px;
+        font-size: 12px;
+        color: $black;
+
+        th {
+            border-top: none;
+
+            &.w20 { width: 20%; }
+            &.w30 { width: 30%; }
+            &.w40 { width: 40%; }
+
+            .pricingTable-header{
+                color: #fff;
+                background-color: transparent;
+                padding: 20px 20px;
+                margin: -25px 0 0;
+                border-radius: 0 50px 0 50px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: 100%;
+                height: 155px;
+                max-height: 155px;
+                cursor: pointer;
+
+                p {
+                    text-align: center;
+                    margin: 10px 0;
+                    font-weight: 100;
+                }
+
+                .title{
+                    font-size: 10px;
+                    font-weight: 200;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                 .price-value{
+                    font-size: 25px;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            
+                &.test {
+                    background-color: $brand-grey;
+                }
+                &.mensuel {
+                    background-color: $orange;
+                }
+                &.annuel {
+                    background-color: $brand-success;
+                }
+                &.expl {
+                    background-color: $brand-danger;
+                }
+            }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid #ccc;
+        height: 30px;
+        font-size: 16px;
+        width: 100%;
+        max-height: 100%;
+
+        td {
+            color: $primaryFontColour;
+            height: 20px;
+
+            i { 
+                font-size: 30px;
+                font-weight: bold;
+
+                &.icon-check {
+                    color: $brand-success;
+                }
+                &.icon-x {
+                    color: $brand-danger;
+                }
+            }
+
+            &.selected-test {
+                background-color: $brand-grey;
+            }
+            &.selected-mensuel {
+                background-color: rgba(255,105,0,0.3);
+            }
+            &.selected-annuel {
+                background-color: rgba(0,128,0,0.3);
+            }
+            &.selected-expl {
+                background-color: rgba(255,0,0,0.3);
+            }
+
+            &.w15 { width: 15%; text-align: center;}
+            &.w20 { width: 20%; text-align: center;}
+            &.w40 { width: 40%;}
+        }
+      }
+    }
+
+    td.w10 {width: 10%; }
+    td.w20 { width: 20%; overflow-wrap: break-word; overflow: auto; }
+    td.w70 { width: 70%; overflow-wrap: break-word; overflow: auto; }
+
+    &.table-no-border {
+        > thead {
+            > tr {
+                border: none;
+                > th { border: none }
+            }
+        }
+        > tbody {
+            > tr {
+                &:hover {
+                    cursor: auto;
+                }
+
+                td, th {
+                    border: 0;
+                }
+            }
+        }
+    }
+
+    td.attribute {
+        text-align: right;
+        color: $brand-greyer;
+    }
+
+    &.table-form {
+        .form-control {
+            border: none;
+            outline: none;
+            box-shadow: none;
+
+            &:focus {
+                outline: none;
+                background-color: #edf1f7;
+            }
+        }
+
+        .btn-hover { visibility: hidden }
+
+        tr:hover, tr:focus {
+            .btn-hover { visibility: visible }
+            .form-control { background-color: #edf1f7 }
+        }
+
+        /* enable absolute positioning */
+        .inner-addon {
+            position: relative;
+        }
+
+        /* style icon */
+        .inner-addon .glyphicon {
+            position: absolute;
+            padding: 10px;
+            padding-top: 7px;
+            pointer-events: none;
+            font-size: 16px;
+            color: $brand-primary;
+        }
+
+        /* align icon */
+        .left-addon .glyphicon  { left:  0px;}
+        .right-addon .glyphicon { right: 0px;}
+
+        /* add padding  */
+        .left-addon input  { padding-left:  35px; }
+        .right-addon input { padding-right: 35px; }
+
+        .left-addon select  { padding-left:  35px; }
+        .right-addon select { padding-right: 35px; }
+    }
+}
+
+@media (max-width: 560px) {
+  .table {
+      margin: 0;
+
+      thead {
+        width: 100%;
+        max-height: 20px;
+
+        tr {
+          width: 100%;
+          height: 20px;
+          background-color: #ccc;
+          padding: 5px;
+          font-size: 14px;
+          color: $brand-teal;
+
+          th {
+              border-top: none;
+              &.w10 { width: 10%; }
+              &.w20 { width: 20%; }
+              &.w30 { width: 30%; }
+              &.no-column {display: none;}
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 1px solid #ccc;
+          height: 20px;
+          font-size: 14px;
+          width: 100%;
+          max-height: 100%;
+
+          td {
+              color: $primaryFontColour;
+
+              i { font-size: 14px }
+
+              &.w10 { width: 10%; }
+              &.w20 { width: 20%; }
+              &.w30 { width: 30%; }
+              &.no-column {display: none;}
+          }
+        }
+      }
+
+
+  }
+}

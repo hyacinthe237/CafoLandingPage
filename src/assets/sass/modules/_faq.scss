@@ -1,0 +1,33 @@
+.accordion {
+    .card {
+        border: 1px solid rgb(155, 155, 155);
+        background: $primary;
+        margin-bottom: 5px;
+        .card-header{
+            border: none ;
+        }
+        .card-body {
+           background: white;
+        }
+        .clearfix {
+            .btn-collapsed {
+                color:white ;
+                font-size: 20px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .btn-collapsed :hover,.btn-link :focus {
+                color: white;
+                text-decoration: none;
+            }
+            .btn-collapsed i {
+                font-size: 20px;
+                text-align: right;
+                margin-left: 860px;
+            }
+            
+        } 
+
+    }
+
+}

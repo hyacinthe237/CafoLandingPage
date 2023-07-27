@@ -20,7 +20,7 @@
                             <li><a href="#">Analyse des données commerciales</a></li>
                             <li><a href="#">Suivi statiques commerciales</a></li> 
                             <li><a href="#">Suivi KPI</a></li>
-                            <li><a href="#">Developpement la performance</a></li>
+                            <li><a href="#">Developpement de la performance</a></li>
                         </ul>
                     </div>
                 </div>
