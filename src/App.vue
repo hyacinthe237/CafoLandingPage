@@ -2,13 +2,14 @@
   <div id="app">
     <navbar></navbar>
     
-    <div class="container">
+    <!-- <div class="container"> -->
       <HeroesSectionComponent></HeroesSectionComponent>
       <ServicesComponent></ServicesComponent>
       <FeatureComponent></FeatureComponent>
-      <CarousselComponent></CarousselComponent>
+      <FaqComponent></FaqComponent>
+      <ContactComponent></ContactComponent>
       <PricingTableComponent></PricingTableComponent>
-    </div>    
+    <!-- </div>     -->
     <FooterComponent></FooterComponent>
   </div>
 </template>
@@ -20,7 +21,8 @@ import PricingTableComponent from './components/PricingTable.vue'
 import HeroesSectionComponent from './components/HeroesSection.vue'
 import ServicesComponent from './components/Services.vue'
 import FeatureComponent from './components/Feature.vue'
-import CarousselComponent from './components/Caroussel.vue'
+import FaqComponent from './components/Faq.vue'
+import ContactComponent from './components/Contact.vue'
 export default {
   name: 'App',
   components: {
@@ -30,7 +32,8 @@ export default {
     HeroesSectionComponent,
     ServicesComponent,
     FeatureComponent,
-    CarousselComponent
+    FaqComponent,
+    ContactComponent,
   },
 
   methods: {

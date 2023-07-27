@@ -1,0 +1,25 @@
+.box {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: none;
+    .contact-box {
+       width: 400px;
+       margin-left: 125px;
+        margin-top: 20px;
+        padding: 0px 20px;
+        min-height: 380px;
+        padding-top: 10px;
+        box-shadow: 0px 0px 10px rgb(155, 155, 155);
+        z-index: -1;
+
+    }
+    
+    .box2 {
+        color: white;
+        background: $primary;
+        border-radius: 20px ;
+        width: 400px;
+        padding: 100px 100px;
+        height: 450px;
+    }
+}
