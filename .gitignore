@@ -2,7 +2,9 @@
 node_modules
 /dist
 
-src/assets/Section.psd
+
+# ignore psd file
+/src/assets/Section.psd
 
 
 # local env files
