@@ -5,9 +5,9 @@
       <HeroesSectionComponent></HeroesSectionComponent>
       <ServicesComponent></ServicesComponent>
       <FeatureComponent></FeatureComponent>
-      <FaqComponent></FaqComponent>
-      <ContactComponent></ContactComponent>
       <PricingTableComponent></PricingTableComponent>
+      <ContactComponent></ContactComponent>
+      <FaqComponent></FaqComponent>
     <!-- </div>     -->
     <FooterComponent></FooterComponent>
   </div>
@@ -42,5 +42,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/sass/app"
+@import "./assets/sass/app";
 </style>

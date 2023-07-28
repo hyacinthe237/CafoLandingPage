@@ -21,5 +21,24 @@
             font-weight: 800;
             text-transform: uppercase;
         }
+
+        .description {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .home-section {
+        ._table {
+            overflow: auto;
+            width: 100%;
+        }
+        ._title {
+            h2 {
+                font-size: 1.5em;
+            }
+        }
     }
 }

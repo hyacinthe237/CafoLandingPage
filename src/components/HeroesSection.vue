@@ -3,12 +3,12 @@
         <div class="slogan">
             <h1>Piloter vos equipes et partenaires en temps réel</h1>
             <p>Fournir aux managers des indicateurs efficaces de développement du CA: couverture, croissance du porte-feuilles, distribution, suivi  CRM.</p>
-            <div class="button">
-                <ul class="navbar-nav">
-                    <li class="nav-item mr-4">
+            <div class="button mt-20">
+                <ul>
+                    <li class="mr-4">
                         <button class="btn btn-primary-outline" href="#">Voir la démo</button>
                     </li>
-                    <li class="nav-item">
+                    <li>
                         <button class="btn btn-secondary-outline" href="#">Tester</button>
                     </li>
                 </ul>

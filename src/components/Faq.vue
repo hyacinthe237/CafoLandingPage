@@ -3,7 +3,11 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class="text-center">FAQ</h1>
+                    <div class="col-sm-12">
+                        <div class="_title mb-40">
+                            <h2>FAQ</h2>
+                        </div>
+                </div>
                     <div class="accordion" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id="headingOne">

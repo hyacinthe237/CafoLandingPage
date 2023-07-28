@@ -6,6 +6,10 @@ header {
     display: flex;
     flex-direction: column;
 
+    .icon {
+        display: none;
+    }
+
     .navbar-light {
         background-color: white;
         padding: 20px 0px;
@@ -30,6 +34,23 @@ header {
 
             img {
                 width: 50px;
+            }
+        }
+
+        .dropdown-menu {
+            border: 0;
+            padding: 0;
+            .dropdown-item {
+                border-top: 1px solid rgba(0,0,0,0.1);
+
+                &:hover {
+                    color: white;
+                    background-color: $primary;
+                }
+
+                &:last-child {
+                    border-bottom: 1px solid rgba(0,0,0,0.1);
+                }
             }
         }
 
@@ -75,7 +96,18 @@ header {
 @media screen and (max-width: 991px) {
     header {
         padding: 10px;
-            
+
+        .icon {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+        }
+
+        .navbar-light {
+            padding: 20px;
+        }
     }
     
 }

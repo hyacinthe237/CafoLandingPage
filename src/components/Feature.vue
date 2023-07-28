@@ -34,56 +34,12 @@
               </div>
            </div>
       </div>
-      <!-- <div class="carousel">
-      <h1>Découvrez l'application qui simplifiera la gestion de vos equipes</h1>
-    <VueSlickCarousel 
-      :arrows="true" 
-      :dots="true" 
-      :focusOnSelect="true"
-      :infinite="true" 
-      :speed="500"
-      :slidesToShow="5" 
-      :slidesToScroll=" 2"
-      :touchThreshold="2" >
-      <div class="slide"><img :src="interface1"></div>
-      <div class="slide"><img :src="interface2"></div>
-      <div class="slide"><img :src="interface3"></div>
-      <div class="slide"><img :src="interface4"></div>
-      <div class="slide"><img :src="interface5"></div>
-      <div class="slide"><img :src="interface6"></div>
-      <div class="slide"><img :src="interface7"></div>
-      <div class="slide"><img :src="interface8"></div>
-      <div class="slide"><img :src="interface9"></div>
-      <div class="slide"><img :src="interface10"></div>
-      <div class="slide"><img :src="interface11"></div>
-      <div class="slide"><img :src="interface12"></div>
-      <div class="slide"><img :src="interface13"></div>
-      <div class="slide"><img :src="interface14"></div>
-  </VueSlickCarousel>
-  </div> -->
         
     </section>
    
     
 </template>
 <script>
-// import VueSlickCarousel from 'vue-slick-carousel'
-// import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-// import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
-// import interface1 from '@/assets/img/1.jpg'
-// import interface2 from '@/assets/img/2.jpg'
-// import interface3 from '@/assets/img/3.jpg'
-// import interface4 from '@/assets/img/4.jpg'
-// import interface5 from '@/assets/img/5.jpg'
-// import interface6 from '@/assets/img/6.jpg'
-// import interface7 from '@/assets/img/7.jpg'
-// import interface8 from '@/assets/img/8.jpg'
-// import interface9 from '@/assets/img/9.jpg'
-// import interface10 from '@/assets/img/10.jpg'
-// import interface11 from '@/assets/img/11.jpg'
-// import interface12 from '@/assets/img/12.jpg'
-// import interface13 from '@/assets/img/13.jpg'
-// import interface14 from '@/assets/img/14.jpg'
 
   export default {
     name: 'FeatureComponent',
@@ -92,33 +48,7 @@
     data: () => ({
       feature: [],
       tout: false,
-      // interface1,
-      // interface2,
-      // interface3,
-      // interface4,
-      // interface5,
-      // interface6,
-      // interface7,
-      // interface8,
-      // interface9,
-      // interface10,
-      // interface11,
-      // interface12,
-      // interface13,
-      // interface14,
-        }),
-  //   settings: {
-      
-  //     centerMode: true,
-  //     centerPadding: "20px",
-  //     focusOnSelect: true,
-  //     infinite: true,
-  //     slidesToShow: 3,
-  //     speed: 500
-  //    },
-  //   components: {
-  //    VueSlickCarousel,
-  //  },
+    }),
 
         mounted () {
            this.initFeature()

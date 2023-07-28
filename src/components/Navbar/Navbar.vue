@@ -10,7 +10,7 @@
                 >
                     </a>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
+                        <i class="feather icon-menu"></i>
                     </a>
                 <div   
                     class="collapse navbar-collapse" 
@@ -41,10 +41,12 @@
                                 aria-expanded="false"
                             >Services</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a 
+                                    class="dropdown-item" 
+                                    href="#"
+                                    v-for="service in services"
+                                    :key="service.id"
+                                >{{ service.name }}</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -56,10 +58,12 @@
                             >
                                 Fonctionnalités</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a 
+                                    class="dropdown-item" 
+                                    href="#"
+                                    v-for="feat in feats"
+                                    :key="feat.id"                                    
+                                >{{ feat.name }}</a>
                             </div>
                         </li>
                         <li class="nav-item ">
@@ -99,10 +103,14 @@
         name: 'NavbarComponent',
 
         data: () => ({
-            logo
+            logo,
+            services: [],
+            feats: []
         }),
 
         mounted () {
+            this.initServices()
+            this.initFeatures()
             this.initScroll()
             window.$(document).ready(function() {
                 window.$('.dropdown').hover(function() {
@@ -130,16 +138,31 @@
                         } 
                     });
                 }); 
-            }
-        },
+            },
 
-    //     function: myFunction () {
-    //         var x = document.getElementById("navbarSupportedContent");
-    //         if (x.className === "collapse navbar-collapse") {
-    //         x.className += " responsive";
-    //       } else {
-    //      x.className = "collapse navbar-collapse";
-    //         }
-    //     }
+            initServices () {
+                this.services = [
+                    {id: 1, name: 'Suivi KPI', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {id: 2, name: 'Pilotage des équipes de ventes', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {id: 3, name: 'Croissance du chiffre d\'affaires', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {id: 4, name: 'Communication directe avec les clients', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {id: 5, name: 'Analyse des données commerciales', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {id: 6, name: 'Suivi statiques commerciales', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {id: 7, name: 'Optimisation de la distribution', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {id: 8, name: 'Developpement la performance', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {id: 9, name: 'Optimisation de la couverture d\'un territoire commercial', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                ]
+            },
+
+            initFeatures () {
+                this.feats = [
+                    {id: 1, icon: 'users', name: 'Gestion des utilisateurs', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {id: 2, icon: 'user', name: 'Gestion clients', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {id: 3, icon: 'layers', name: 'Gestion et suivi des commandes', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {id: 4, icon: 'trending-up', name: 'Stats & KPI', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {id: 5, icon: 'eye', name: 'Supervision des utilisateurs', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                  ]
+            },
+        },
     }
 </script>

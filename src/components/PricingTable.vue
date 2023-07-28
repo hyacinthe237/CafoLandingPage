@@ -1,6 +1,8 @@
 <template>
   <section class="home-section">
-        <table class="table table-striped">
+        <div class="container">
+            <div class="_table">
+            <table class="table table-striped">
             <thead>
                 <tr>
                     <th class="w40">
@@ -51,6 +53,8 @@
                 </tr>
             </tbody>
         </table>
+        </div>
+        </div>
   </section>
 </template>
 <script>
@@ -75,6 +79,7 @@
                     { name: 'Base données clients', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check'},
                     { name: 'Suivi des visites clients', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check' },
                     { name: 'Prospection clients', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check' },
+                    { name: 'Réseau client partenaire', icon1: 'x', icon2: 'check', icon3: 'check', icon4: 'check' },
                     { name: 'Stats/KPI de managers', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check' },
                     { name: 'Gestion de commandes', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check' },
                     { name: 'Jusqu’à 10 compte', icon1: 'check', icon2: 'check', icon3: 'check', icon4: 'check' },
@@ -91,7 +96,9 @@
                     { name: 'Serveur de base de données hébergé chez le client(confidentialité)', icon1: 'x', icon2: 'x', icon3: 'x', icon4: 'check' },
                     { name: 'Maintenance 3ans', icon1: 'x', icon2: 'x', icon3: 'x', icon4: 'check' },
                     { name: 'Accès illimité à tout', icon1: 'x', icon2: 'x', icon3: 'x', icon4: 'check' },
+                    
                 ];
+
             },
 
             selectOptionTest (option) {
@@ -121,3 +128,5 @@
         },
     }
 </script>
+
+
