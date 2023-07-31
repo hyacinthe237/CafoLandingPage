@@ -8,12 +8,12 @@
                 <img :src="logo" 
                       class="CAFO"
                 >
-                    </a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="feather icon-menu"></i>
-                    </a>
+                </a>
+                
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar"><i class="feather icon-menu"></i></label>
                 <div   
-                    class="collapse navbar-collapse" 
+                    class="collapse navbar-collapse"
                     id="navbarSupportedContent"
                 >
                     <ul 

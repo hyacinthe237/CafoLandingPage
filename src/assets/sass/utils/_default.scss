@@ -17,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.br { border: 5px solid $primary;}
 .elevated { box-shadow: 2px 8px 20px rgba(0,0,0,0.1); }
 .bs { box-shadow: 0px 0px 10px rgb(155, 155, 155);}
 .nowrap { white-space: nowrap; }
