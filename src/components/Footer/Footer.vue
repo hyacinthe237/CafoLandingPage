@@ -46,41 +46,15 @@
                     </div>
                 </div>
                 <div class="endfooter">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <ul>
-                                <li><a href="#">Terme</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <ul>
-                                <li><a href="#">Tarification</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <ul>
-                                <li><a href="#">Securité</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <ul>
-                                <li><a href="#">Status</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                <ul>
-                </ul>
+                    <ul>
+                        <li><a href="#">Terme</a></li>
+                        <li><a href="#">Tarification</a></li>
+                        <li><a href="#">Securité</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
             </div>
-            </div>
-            
-
-            </div>
+        </div>
     </footer>
 </template>
 <script>

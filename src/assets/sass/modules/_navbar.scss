@@ -89,11 +89,14 @@ header {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media(max-width: 991px) {
     header {
         padding: 20px;
+
         
         .navbar-light {
+            padding: 20px;
+            
             .navbar-nav {
                 >li {
                     >a {
@@ -137,8 +140,8 @@ header {
         }
         
         #menu-bar:checked ~ .collapse {
-        display: initial;
-    }
+            display: initial;
+        }
     }
     
 }

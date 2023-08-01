@@ -1,58 +1,54 @@
-// .pricingTable-header{
-//     color: #fff;
-//     background-color: $primary;
-//     padding: 45px 15px 45px 20px;
-//     margin: -25px 0 20px;
-//     border-radius: 0 20px 0 0;
-//     display: inline-block;
-//     position: relative;
-// }
-// .title {
-//     font-size: 18px;
-//     font-weight: 700;
-//     text-transform: uppercase;
-// }
-//  .price-value {
-//     font-size: 50px;
-//     font-weight: 700;
-//     line-height: 80px;
-    
-// }
 .pricing {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     width: 100%;
-    border: 1px solid $primary;
+    border: 0.5px solid $primary;
+    padding: 20px;
+    border-radius: 20px;
+    min-height: 600px;
     
     .card-title {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        font-size: 25px;
-        height: 40px;
+        font-size: 18px;
+        
+        p {
+            text-transform: capitalize;
+        }
     }
-    .card-body {
+    .price {
         width: 100%;
-        font-size: 50px;
+        font-size: 30px;
         font-weight: 600;
     }
     ul {
         list-style: none;
+        padding: 0;
         li {
-            text-align: left;
-            padding-left: 10px;
-            font-size: 20px;
-            i {
-                padding-right: 10px;
+            font-size: 12px;
+            .check {
                 color: green;
+            }
+            .X {
+                color: red;
+            }
+            i {
+                margin-right: 5px;
+                font-size: 14px;
+                font-weight: bold;
             }
         }
     }
-    button {
-        text-align: center;
-    }
-    .button {
-        button {
+    .btn-modal {
             color: $secondary;
-        }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    }
+}
+
+@media(max-width: 991px) {
+    .pricing {
+        margin-bottom: 20px;
     }
 }

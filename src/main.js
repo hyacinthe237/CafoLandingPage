@@ -8,6 +8,8 @@ Vue.config.productionTip = false
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/js/dist/collapse.js'
 import 'bootstrap/js/dist/popover.js'
+import 'bootstrap/dist/js/bootstrap.js'
+import 'jquery/src/jquery.js'
 // global.$ = $
 
 new Vue({
