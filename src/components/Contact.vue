@@ -92,24 +92,24 @@
                         <ul>
                             <li>
                                 <i class="feather icon-map-pin mr-1"></i>
-                                <span>Yaoundé Cameroun</span>
+                                <span>France, Australie, Cameroun</span>
                             </li>
                             <li>
-                                <a href="tel:+237651515151">
+                                <a href="tel:+33644731154">
                                     <i class="feather icon-phone mr-1"></i>
-                                    <span>+237651515151</span>
+                                    <span>+33644731154</span>
                                 </a>                                
                             </li>
                             <li>
-                                <a href="mailto:cafo@izytechgroup.com">
+                                <a href="mailto:izytechgroup@gmail.com">
                                     <i class="feather icon-mail mr-1"></i>
-                                    <span>cafo@izytechgroup.com</span>
+                                    <span>izytechgroup@gmail.com</span>
                                 </a>                                
                             </li>
                             <li>
                                 <a href="#">
                                     <i class="feather icon-mail mr-1"></i>
-                                    <span>cafo.izytechgroup.com</span>
+                                    <span>www.cafo.com</span>
                                 </a>                                
                             </li>
                         </ul>

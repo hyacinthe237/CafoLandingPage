@@ -40,8 +40,8 @@
                     <div class="box">
                         <h4>Nous contacter</h4>
                         <ul>
-                            <li><a href="tel:+237651515151">+237651515151</a></li>
-                            <li><a href="mailto:infos@cafoapp.com">infos@cafoapp.com</a></li>
+                            <li><a href="tel:+33644731154">+33644731154</a></li>
+                            <li><a href="mailto:izytechgroup@gmail.com">izytechgroup@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>
