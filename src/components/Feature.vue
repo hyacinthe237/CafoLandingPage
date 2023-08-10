@@ -67,11 +67,20 @@
         methods: {
             initFeature () {
                 this.feature = [
-                    {id: 1, icon: 'users', name: 'Gestion des utilisateurs', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
-                    {id: 2, icon: 'user', name: 'Gestion clients', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
-                    {id: 3, icon: 'layers', name: 'Gestion et suivi des commandes', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
-                    {id: 4, icon: 'trending-up', name: 'Stats & KPI', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
-                    {id: 5, icon: 'eye', name: 'Supervision des utilisateurs', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {
+                      id: 1, icon: 'users', name: 'Gestion des utilisateurs', 
+                      description: "Gestion des autorisations et des niveaux d'accès pour assurer la sécurité des données." },
+                    {
+                      id: 2, icon: 'user', name: 'Gestion clients', 
+                      description: "Création, la mise à jour et la suppression des informations de clients, ainsi que le suivi de leurs interactions avec l'entreprise." },
+                    {id: 3, icon: 'layers', name: 'Gestion et suivi des commandes', 
+                    description: "Gestion de l'inventaire, le traitement des commandes, la facturation et le suivi des livraisons." },
+                    {
+                      id: 4, icon: 'trending-up', name: 'Stats & KPI', 
+                      description: "Suivre les performances de l'entreprise en utilisant des données quantitatives telles que les ventes, les marges bénéficiaires et les taux de conversion." },
+                    {
+                      id: 5, icon: 'eye', name: 'Supervision des utilisateurs', 
+                      description: "Garantir la conformité aux politiques de sécurité et de confidentialité, ainsi que pour identifier les opportunités d'amélioration de l'efficacité et de la productivité." },
                   ]
             },
             displayFeature () {
