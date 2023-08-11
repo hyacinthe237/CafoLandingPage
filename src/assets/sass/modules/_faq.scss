@@ -22,8 +22,9 @@
             }
             .btn-collapsed i {
                 font-size: 20px;
-                text-align: right;
-                margin-left: 860px;
+                display: flex;
+                flex-direction: row;
+                justify-content: right;
             }
             
         } 

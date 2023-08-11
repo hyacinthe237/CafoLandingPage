@@ -82,7 +82,7 @@
                             <a class="nav-link" href="#">Faq</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="button navbar-nav ml-auto">
                         <li class="nav-item mr-2">
                             <button class="btn btn-primary-outline" href="#">Voir la démo</button>
                         </li>

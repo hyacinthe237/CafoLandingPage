@@ -3,6 +3,7 @@
     <navbar></navbar>    
     <!-- <div class="container"> -->
       <HeroesSectionComponent></HeroesSectionComponent>
+      <SlideComponent></SlideComponent>
       <ServicesComponent></ServicesComponent>
       <FeatureComponent></FeatureComponent>
       <PricingTableComponent></PricingTableComponent>
@@ -22,6 +23,7 @@ import ServicesComponent from './components/Services.vue'
 import FeatureComponent from './components/Feature.vue'
 import FaqComponent from './components/Faq.vue'
 import ContactComponent from './components/Contact.vue'
+import SlideComponent from './components/Slide/Slide.vue'
 export default {
   name: 'App',
   components: {
@@ -29,6 +31,7 @@ export default {
     FooterComponent,
     PricingTableComponent,
     HeroesSectionComponent,
+    SlideComponent,
     ServicesComponent,
     FeatureComponent,
     FaqComponent,

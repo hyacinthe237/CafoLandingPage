@@ -72,12 +72,33 @@ header {
                     font-size: 18px;
                     padding: 10px;
                     font-weight: bold;
-
+    
                     &:hover {
                         color: $primary;
                     }
                 }
-
+    
+                &.nav-item {
+                    &.active {
+                        color: $primary;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+        .navbar-nav {
+            >li {
+                >a {
+                    color: $black;
+                    font-size: 18px;
+                    padding: 10px;
+                    font-weight: bold;
+    
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+    
                 &.nav-item {
                     &.active {
                         color: $primary;
@@ -104,6 +125,7 @@ header {
                         font-size: 18px;
                         padding: 10px;
                         font-weight: bold;
+
     
                         &:hover {
                             color: $primary;
@@ -118,7 +140,48 @@ header {
                     }
                 }
             }
-            label {
+            .dropdown-menu {
+                width: 100%;
+                border: 0;
+                padding: 0;
+                .dropdown-item {
+                    border-top: 1px solid rgba(0,0,0,0.1);
+    
+                    &:hover {
+                        color: white;
+                        background-color: $primary;
+                    }
+    
+                    &:last-child {
+                        border-bottom: 1px solid rgba(0,0,0,0.1);
+                    }
+                }
+            }
+            .button{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                >li {
+                    margin-right: none;
+                    list-style: none;
+                    >a {
+                        color: $black;
+                        font-size: 18px;
+                        font-weight: bold;
+                        padding: 10px;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }            
+                    &.nav-item {
+                        &.active {
+                            color: $primary;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+                label {
                 display: initial;
                 font-size: 30px;
             }
