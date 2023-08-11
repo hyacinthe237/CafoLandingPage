@@ -1,5 +1,5 @@
 <template>
-    <div class="hsection" :style="`background-image: url(${bgHero});`">
+    <div class="hsection" :style="`background-image: url(${bgHero});`" id="hero">
         <div class="slogan">
             <h1>Piloter vos equipes et partenaires en temps réel</h1>
             <p>Fournir aux managers des indicateurs efficaces de développement du CA: couverture, croissance du porte-feuilles, distribution, suivi  CRM.</p>

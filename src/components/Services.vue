@@ -1,10 +1,10 @@
 <template>
-    <section class="home-section">
+    <section class="home-section" id="services">
         <div class="container">
             <div class="_title">
                 <h2>Services</h2>
                 <div class="description">
-                    Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!
+                    Nous les avons pensés afin de résoudre au mieux votre problème d'entreprise.
                 </div>
             </div>
             <div class="row">
@@ -63,15 +63,33 @@
         methods: {
             initServices () {
                 this.services = [
-                    {id: 1, name: 'Suivi KPI', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
-                    {id: 2, name: 'Pilotage des équipes de ventes', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
-                    {id: 3, name: 'Croissance du chiffre d\'affaires', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
-                    {id: 4, name: 'Communication directe avec les clients', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
-                    {id: 5, name: 'Analyse des données commerciales', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
-                    {id: 6, name: 'Suivi statiques commerciales', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
-                    {id: 7, name: 'Optimisation de la distribution', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
-                    {id: 8, name: 'Developpement la performance', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
-                    {id: 9, name: 'Optimisation de la couverture d\'un territoire commercial', description: 'Corporis nihil, illum accusamus incidunt architecto ratione tempora quis!' },
+                    {
+                        id: 1, name: 'Suivi KPI', 
+                        description: 'Ce service consiste à suivre les indicateurs de performance clés (KPI) pour évaluer la performance de l\'entreprise. Il permet de mesurer l\'efficacité des actions entreprises et de prendre des décisions en fonction des résultats obtenus.' },
+                    {
+                        id: 2, name: 'Pilotage des équipes de ventes', 
+                        description: 'Ce service consiste à gérer les équipes de vente pour atteindre les objectifs fixés. Il s\'agit de mettre en place des stratégies pour améliorer les performances des commerciaux et augmenter les ventes.' },
+                    {
+                        id: 3, name: 'Croissance du chiffre d\'affaires', 
+                        description: 'Ce service vise à augmenter le chiffre d\'affaires de l\'entreprise en mettant en place des stratégies de développement commercial. Il s\'agit d\'identifier de nouvelles opportunités de croissance et de mettre en place des actions pour les exploiter.' },
+                    {
+                        id: 4, name: 'Communication directe avec les clients', 
+                        description: "Ce service permet d'établir une communication directe avec les clients pour mieux comprendre leurs besoins et leurs attentes. Il permet également de renforcer la relation client et d'améliorer la satisfaction client." },
+                    {
+                        id: 5, name: 'Analyse des données commerciales', 
+                        description: "Ce service consiste à analyser les données commerciales pour mieux comprendre le marché, les tendances et les comportements d'achat des clients. Il permet de prendre des décisions éclairées pour améliorer la performance commerciale." },
+                    {
+                        id: 6, name: 'Suivi statiques commerciales', 
+                        description: "Ce service consiste à suivre les statistiques commerciales pour évaluer la performance de l'entreprise. Il permet de mesurer l'efficacité des actions entreprises et de prendre des décisions en fonction des résultats obtenus." },
+                    {
+                        id: 7, name: 'Optimisation de la distribution', 
+                        description: "Ce service vise à optimiser la distribution des produits ou services de l'entreprise pour améliorer la satisfaction client et réduire les coûts logistiques. Il s'agit de mettre en place des stratégies pour améliorer la gestion de la chaîne d'approvisionnement." },
+                    {
+                        id: 8, name: 'Developpement la performance', 
+                        description: "Ce service consiste à développer la performance de l'entreprise en mettant en place des stratégies pour améliorer la productivité, la qualité et l'efficacité des processus. Il permet d'optimiser les ressources de l'entreprise et d'améliorer sa compétitivité." },
+                    {
+                        id: 9, name: 'Optimisation de la couverture d\'un territoire commercial', 
+                        description: "Ce service vise à optimiser la couverture d'un territoire commercial en identifiant les zones à fort potentiel de développement et en mettant en place des actions pour les exploiter. Il permet d'augmenter les ventes et d'améliorer la performance commerciale de l'entreprise." },
                 ]
             },
 

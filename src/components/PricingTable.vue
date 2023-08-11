@@ -1,5 +1,5 @@
 <template>
-    <section class="home-section">
+    <section class="home-section" id="tarifs">
         <div class="_title mb-40">
             <h2>Tarifications</h2>
             <div class="description">Unique juste pour vous satisfaire</div>
