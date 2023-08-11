@@ -3,7 +3,7 @@
         <div class="_title">
               <h2>Fonctionnalités</h2>
             <div class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Intuitive et simple à manipuler
             </div>
             <div class="container">
               <div class="row">
