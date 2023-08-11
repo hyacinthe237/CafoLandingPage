@@ -2,6 +2,7 @@ import posthog from "posthog-js";
 
 export default {
   install(app, options) {
+    console.log(options)
     app.config.globalProperties.$posthog = posthog.init(
       "<ph_project_api_key>",
       {
