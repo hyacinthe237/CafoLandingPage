@@ -1,5 +1,5 @@
 <template>
-    <section class="home-section bg-grey">
+    <section class="home-section bg-grey" id="feature">
         <div class="_title">
               <h2>Fonctionnalités</h2>
             <div class="description">
