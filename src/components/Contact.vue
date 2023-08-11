@@ -92,18 +92,18 @@
                         <ul>
                             <li>
                                 <i class="feather icon-map-pin mr-1"></i>
-                                <span>France, Australie, Cameroun</span>
+                                <span>Yaoundé Cameroun</span>
                             </li>
                             <li>
-                                <a href="tel:+33644731154">
+                                <a href="tel:+237691304636">
                                     <i class="feather icon-phone mr-1"></i>
-                                    <span>+33644731154</span>
+                                    <span>+237 691 30 46 36</span>
                                 </a>                                
                             </li>
                             <li>
-                                <a href="mailto:izytechgroup@gmail.com">
+                                <a href="mailto:hyacinthe@izytechgroup.com">
                                     <i class="feather icon-mail mr-1"></i>
-                                    <span>izytechgroup@gmail.com</span>
+                                    <span>hyacinthe@izytechgroup.com</span>
                                 </a>                                
                             </li>
                             <li>

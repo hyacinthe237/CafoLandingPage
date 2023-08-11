@@ -10,17 +10,13 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="box">
-                        <h4>Nos services</h4>
+                        <h4>Liens important</h4>
                         <ul>
-                            <li><a href="#">Optimisation de la distribution</a></li>
-                            <li><a href="#">Optimisation de la couverture d'un territoire commercial</a></li>
-                            <li><a href="#">Pilotage des équipes de ventes</a></li>
-                            <li><a href="#">Croissance du chiffre d'affaires</a></li>
-                            <li><a href="#">Communication directe avec les clients</a></li>
-                            <li><a href="#">Analyse des données commerciales</a></li>
-                            <li><a href="#">Suivi statiques commerciales</a></li> 
-                            <li><a href="#">Suivi KPI</a></li>
-                            <li><a href="#">Developpement de la performance</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#feature">Fonctionnalités</a></li>
+                            <li><a href="#tarifs">Tarifications</a></li>
+                            <li><a href="#contacts">Contacts</a></li>
+                            <li><a href="#faq">Foire aux questions</a></li>
                         </ul>
                     </div>
                 </div>
@@ -40,15 +36,15 @@
                     <div class="box">
                         <h4>Nous contacter</h4>
                         <ul>
-                            <li><a href="tel:+33644731154">+33644731154</a></li>
-                            <li><a href="mailto:izytechgroup@gmail.com">izytechgroup@gmail.com</a></li>
+                            <li><a href="tel:+237691304636">+237 691 30 46 36</a></li>
+                            <li><a href="mailto:hyacinthe@izytechgroup.com">hyacinthe@izytechgroup.com</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="endfooter">
                     <ul>
                         <li><a href="#">Terme</a></li>
-                        <li><a href="#">Tarification</a></li>
+                        <li><a href="#tarifs">Tarification</a></li>
                         <li><a href="#">Securité</a></li>
                         <li><a href="#">Status</a></li>
                     </ul>
