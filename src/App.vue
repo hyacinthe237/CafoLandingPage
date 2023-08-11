@@ -3,6 +3,7 @@
     <navbar></navbar>    
     <!-- <div class="container"> -->
       <HeroesSectionComponent></HeroesSectionComponent>
+      <SlideComponent></SlideComponent>
       <ServicesComponent></ServicesComponent>
       <FeatureComponent></FeatureComponent>
       <PricingTableComponent></PricingTableComponent>
@@ -24,6 +25,7 @@ import FeatureComponent from './components/Feature.vue'
 import FaqComponent from './components/Faq.vue'
 import ContactComponent from './components/Contact.vue'
 import CookieBanner from './components/cookie/CookieBanner'
+import SlideComponent from './components/Slide/Slide.vue'
 export default {
   name: 'App',
 
@@ -38,6 +40,7 @@ export default {
     FooterComponent,
     PricingTableComponent,
     HeroesSectionComponent,
+    SlideComponent,
     ServicesComponent,
     FeatureComponent,
     FaqComponent,
